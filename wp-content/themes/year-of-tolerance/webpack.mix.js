@@ -14,9 +14,9 @@ require('laravel-mix-tailwind');
  */
 
 mix
-	.js('resources/js/app.js', 'public/js')
-	.less('resources/less/app.less', 'public/css')
-	.tailwind();
+.js('resources/js/app.js', 'public/js')
+.less('resources/less/app.less', 'public/css')
+.tailwind();
 
 // Full API
 // mix.js(src, output);
