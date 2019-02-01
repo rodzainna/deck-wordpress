@@ -6,7 +6,7 @@ This website is built with Wordpress, TailwindCSS, VueJS using Laravel Mix as co
 
 To get started, it is recommended to use Laravel Valet, Homestead, or Local by Flywheel as the dev environment. Once you have the dev environment, clone this repo and type the command below to install dependencies.
 
-Pull from branch `2.x` then go to `wp-content/themes/year-of-tolerance` and `wp-content/themes/year-of-tolerance-ar`.
+Pull from branch `0.x` then go to `wp-content/themes/year-of-tolerance` and `wp-content/themes/year-of-tolerance-ar`.
 
 Then run the command below.
 
