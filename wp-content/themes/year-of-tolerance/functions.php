@@ -7,6 +7,16 @@
  * @package year-of-tolerance
  */
 
+if (!defined('WPINC')) {
+    header('Status: 403 Forbidden');
+    header('HTTP/1.1 403 Forbidden');
+    exit();
+}
+
+
+ define('IS_RTL', FALSE);
+
+
 /**
  * Theme Setup
  */
@@ -26,6 +36,21 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
+
+/**
+ * Functions which enhance the theme by hooking into WordPress.
+ */
+require get_template_directory() . '/inc/functions.php';
+
+/**
+ * Strings Processor
+ */
+require get_template_directory() . '/inc/strings.php';
+
+/**
+ * Functions which enhance the theme by hooking into WordPress.
+ */
+//require get_template_directory() . '/inc/template-functions.php';
 
 /**
  * Customizer additions.
