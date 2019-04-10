@@ -28,10 +28,10 @@ wp-content/wp-cache-config.php
 wp-content/cache/*
 wp-content/cache/supercache/*
 
-# mesasix specific
+# Rodzainna specific
 wp-content/plugins/wp-sweep/
 wp-content/plugins/wp-ultimate-csv-importer/
-wp-content/plugins/mesasix-dashboard-essentials/cache/*
+wp-content/plugins/Rodzainna-dashboard-essentials/cache/*
 wp-content/plugins/duplicate-post/
 wp-content/plugins/post-duplicator/
 wp-content/plugins/regenerate-thumbnails/
