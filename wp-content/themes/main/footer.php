@@ -11,37 +11,43 @@
 
 	<footer class="site-footer bg-black">
 		<div class="container">
-			<div class="flex flex-wrap py-10 justify-between items-center">		
+			<div class="flex flex-wrap py-10 justify-between items-center h-auto">		
 				<!-- Logo + Copyright -->
-				<div class="">
-					<a href="#">
+				<div class="flex flex-col justify-center h-auto">
+					<a href="#" class="mt-2">
 						<img src="<?php echo get_template_directory_uri(); ?>/public/images/grey-logo.png">
 					</a>
-					<br>
-					<span class="text-2xs text-grey-lightest">
+					<div class="text-2xs text-grey-lightest my-3">
 						© 2018 Deck<br>
 						Component based UI Kit
-					</span>
+					</div>
 				</div>
 				<!-- End Logo + Copyright -->
 
 				<div class="flex flex-wrap-reverse md:flex-wrap">
+					<?php
+						wp_nav_menu( [
+							'menu' => 'footer-menu',
+							'menu_class' => 'footer-menu',
+							'theme_location' => 'primary-menu'
+						]);
+					?>
 
 					<!-- Footer Links -->
-					<ul class="flex flex-wrap lg:content-between font-oswald tracking-wider p-0 uppercase list-reset">
-						<li class="lg:pl-6 w-1/4"><a class="text-xs text-white" href="#">Technology</a></li>
-						<li class="lg:pl-6 w-1/4"><a class="text-xs text-white" href="#">Ideas</a></li>
-						<li class="lg:pl-6 w-1/4"><a class="text-xs text-white" href="#">Leadership</a></li>
-						<li class="lg:pl-6 w-1/4"><a class="text-xs text-white" href="#">Video</a></li>
-						<li class="lg:pl-6 w-1/4"><a class="text-xs text-white" href="#">News</a></li>
-						<li class="lg:pl-6 w-1/4"><a class="text-xs text-white" href="#">Finance</a></li>
-						<li class="lg:pl-6 w-1/4"><a class="text-xs text-white" href="#">Entertainment</a></li>
-					</ul>
+					<!-- <ul class="flex flex-wrap lg:content-between font-oswald tracking-wider p-0 md:pl-56 lg:pl-0 mt-4 md:-mt-16 lg:mt-0 uppercase list-reset">
+						<li class="lg:pl-2 xl:pl-6 pb-2 w-1/2 md:w-1/3 lg:w-1/4"><a class="text-xs text-white" href="#">Technology</a></li>
+						<li class="lg:pl-2 xl:pl-6 pb-2 w-1/2 md:w-1/3 lg:w-1/4"><a class="text-xs text-white" href="#">Ideas</a></li>
+						<li class="lg:pl-2 xl:pl-6 pb-2 w-1/2 md:w-1/3 lg:w-1/4"><a class="text-xs text-white" href="#">Leadership</a></li>
+						<li class="lg:pl-2 xl:pl-6 pb-2 w-1/2 md:w-1/3 lg:w-1/4"><a class="text-xs text-white" href="#">Video</a></li>
+						<li class="lg:pl-2 xl:pl-6 pb-2 w-1/2 md:w-1/3 lg:w-1/4"><a class="text-xs text-white" href="#">News</a></li>
+						<li class="lg:pl-2 xl:pl-6 pb-2 w-1/2 md:w-1/3 lg:w-1/4"><a class="text-xs text-white" href="#">Finance</a></li>
+						<li class="lg:pl-2 xl:pl-6 pb-2 w-1/2 md:w-1/3 lg:w-1/4"><a class="text-xs text-white" href="#">Entertainment</a></li>
+					</ul> -->
 					<!-- End Footer Links -->
 
 					<!-- Social Media + Newsletter -->
 					<div class="flex flex-wrap flex-col-reverse md:flex-row-reverse lg:flex-col md:items-center lg:items-end">
-						<div class="flex lg:justify-end md:ml-6 lg:ml-0 lg:mb-4">
+						<div class="flex lg:justify-end md:ml-6 lg:ml-0 lg:mb-2">
 							<span class="text-grey-lightest">Follow us:</span>
 
 							<!-- Instagram -->
@@ -114,7 +120,7 @@
 
 				
 						<form class="flex my-4 lg:my-0">
-							<input class="border-none text-black rounded-none h-8 text-2xs w-56 px-3" type="email" name="email" placeholder="Your E-mail">
+							<input class="border-none text-black rounded-none h-8 text-2xs w-56 lg:w-48 xl:w-56 px-3" type="email" name="email" placeholder="Your E-mail">
 							<button class="font-oswald bg-pink border-none rounded-none m-0 h-8 px-4 text-2xs text-white uppercase tracking-wider">Subscribe</button>
 						</form>
 					</div>

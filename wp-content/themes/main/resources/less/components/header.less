@@ -1,0 +1,21 @@
+.site-header {
+    transition: 0.3s;
+}
+
+.header-menu {
+    @apply .flex .font-oswald .p-0 .text-xs .tracking-wider .uppercase .list-reset;
+
+    li {
+        @apply .ml-12 .leading-normal;
+
+        a {
+            @apply .text-black;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .header-menu {
+        @apply .hidden;
+    }
+}

@@ -1,0 +1,43 @@
+
+.footer-menu {
+    @apply flex flex-wrap font-oswald tracking-wider p-0 pl-0 mt-4 mt-0 uppercase list-reset;
+
+    li {
+        @apply pl-6 pb-4 w-1/4;
+
+        a {
+            @apply .text-xs .text-white;
+        }
+    }
+}
+
+//large devices max width
+@media (max-width: 1199px) {
+    .footer-menu {
+
+        li {
+            @apply pl-2;
+        }
+    }
+}    
+
+//medium devices max width
+@media (max-width: 991px) {
+    .footer-menu {
+        @apply pl-56 -mt-16;
+
+        li {
+            @apply w-1/3;
+        }
+    }
+}
+
+//small devices max width
+@media (max-width: 767px) {
+    .footer-menu {
+        @apply mt-4 p-0;
+        li {
+            @apply w-1/2 pl-0;
+        }
+    }
+}

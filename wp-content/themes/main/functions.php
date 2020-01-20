@@ -16,6 +16,8 @@ if (!defined('WPINC')) {
 
  define('IS_RTL', FALSE);
 
+ require 'vendor/autoload.php';
+
 
 /**
  * Theme Setup
@@ -43,9 +45,19 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/functions.php';
 
 /**
+ * Queries
+ */
+require get_template_directory() . '/inc/queries.php';
+
+/**
  * Strings Processor
  */
 require get_template_directory() . '/inc/strings.php';
+
+/**
+ * Post types
+ */
+require get_template_directory() . '/inc/post-types.php';
 
 /**
  * Functions which enhance the theme by hooking into WordPress.
@@ -63,4 +75,6 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+show_admin_bar(false);
 
